@@ -1,0 +1,181 @@
+@import 'bootstrap';
+
+html, body{
+  margin: 0;         /* 余白の削除 */
+  padding: 0;        /* 余白の削除 */
+  width:100%;
+  height:100%;
+}
+.paginate {
+  nav{
+      display: inline-block;
+  }
+}
+
+// header-css
+.nav-link {
+  font-family: 'Lobster', cursive;
+  font-size: 1.3em;
+}
+
+.dropdown {
+  transition: 0.8s;
+}
+
+.dropdown-item {
+  font-family: 'Lobster', cursive;
+  font-size: 1.3em;
+}
+
+.dropdown-menu {
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+
+// staticpages-css
+.top {
+  background-image: url(soccer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 515px;
+  width: 100%;
+  position: relative;
+  .icons {
+      color: white;
+      position: absolute;
+          top: 85%;
+          left: 8%;
+  }
+}
+
+.homeabout {
+  position: absolute;
+    top: 87%;
+    right: 5%;
+  .text-link{
+    color: white;
+    text-decoration:none;
+    font-family: 'Lobster', cursive;
+    transition: 0.8s;
+    &:hover {
+        color: red;
+        font-size: 1.02em;
+    }
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.copy-right {
+  position: absolute;
+    top: 90%;
+    left: 5%;
+  .copy-right-text{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+  }
+}
+
+.top-text {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.top-textarea {
+  color: rgb(236, 53, 53);
+  font-size: 1.3em;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.about{
+  font-size: 4em;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.signup .btn {
+  background-color: rgb(8, 8, 8);
+  border-color: rgb(255, 255, 255);
+  transition: 1.2s;
+  color: white;
+  &:hover{
+    opacity: 0.8;
+    background-color: white;
+    border-color: black;
+    color: black;
+  }
+}
+
+.signup {
+  position: absolute;
+    top:50%;
+    left: 44%;
+}
+
+.fa-fw {
+  color: white;
+  font-size: 1em;
+  transition: 0.8s;
+  &:hover {
+    color: red;
+    font-size: 1.1em;
+  }
+}
+
+// form-css
+.form-top-session {
+  background-color: rgba(26, 25, 25, 0.7);
+  border-radius: 10px;
+  margin-top: 1%;
+  padding-bottom: 1%;
+  position: absolute;
+    top: 25%;
+    left: 36%
+}
+
+.form-top {
+  background-color: rgba(26, 25, 25, 0.7);
+  border-radius: 10px;
+  padding-bottom: 1%;
+  position: absolute;
+    top: 5%;
+    left: 24%
+}
+
+.form-group .form-text {
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.form-image-session {
+  background-color: rgb(129, 2, 2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 515px;
+  width: 100%;
+  position: relative;
+}
+
+.form-image {
+  background-color: rgb(129, 2, 2);
+  height: 680px;
+  width: 100%;
+  position: relative;
+}
+
+// all btn
+
+.btn {
+  font-family: 'Lobster', cursive;
+}
+
+// photo
+.photo {
+  width:20%;
+  height: 20%;
+}
