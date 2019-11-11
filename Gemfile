@@ -71,5 +71,7 @@ gem 'jquery-rails'
 
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap4'
+
+gem 'mini_magick', '~> 4.8'
 # For seeding data
 # gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'

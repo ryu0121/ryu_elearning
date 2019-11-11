@@ -1,7 +1,9 @@
 <div class='jumbotron'>
-    <% if @user.photo.attached? %>
-        <%= image_tag @user.photo %>
-    <% end %>
+        <% if @user.photo.attached? %>
+            <%= image_tag @user.photo.variant(resize:'100x100').processed, class:"photo" %>
+        <% else %>
+            <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
+        <% end %>
     <div class="row">
         <div class="col-8">
             <div class="media-body ml-3">
