@@ -163,7 +163,7 @@ html, body{
 
 .form-image {
   background-color: rgb(129, 2, 2);
-  height: 680px;
+  height: 920px;
   width: 100%;
   position: relative;
 }
@@ -178,4 +178,28 @@ html, body{
 .photo {
   width:20%;
   height: 20%;
+  border-radius: 50%;
+}
+
+// dashboard
+.learned-number {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.dashboard {
+  text-align: center;
+}
+
+.photo-dashboard {
+  width:30%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.learned-history {
+  margin-left: 40%;
+}
+
+.row {
+  width: 100%;
 }
