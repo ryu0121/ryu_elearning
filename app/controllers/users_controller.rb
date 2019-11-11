@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Successfully Created"
-      redirect_to @user
+      redirect_to root_url
     else
       render :new
     end

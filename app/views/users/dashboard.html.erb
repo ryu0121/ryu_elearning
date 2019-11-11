@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-4 mt-4">
+    <h1 class="learned-number text-center">Dashboard</h1>
+    <div class="dashboard border-right">
+      <%if current_user.photo.attached? %>
+        <%= image_tag current_user.photo.variant(resize:'200x200').processed, class:"photo-dashboard" %>
+      <% else %>
+        <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
+      <% end %>
+      <div class="lerned-history">
+        <h1 class="learned-number"><%= current_user.name %></h1>
+        <p class="learned-number">learned 0 words<p>
+        <p class="learned-number">learned 0 words</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 mt-4">
+    <h1 class="learned-number text-center">Activities</h1>
+  </div>
+</div>

@@ -178,4 +178,25 @@ html, body{
 .photo {
   width:20%;
   height: 20%;
+  border-radius: 50%;
+}
+
+// dashboard
+.learned-number {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.dashboard {
+  margin-left: 40%;
+  height: 400px;
+}
+
+.photo-dashboard {
+  width:50%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.learned-history {
+  margin-left: 40%;
 }
