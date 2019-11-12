@@ -29,7 +29,6 @@ class UsersController < ApplicationController
     if @user.update(user_params)
        flash[:success] ="Successfully updated"
        redirect_to user_url(current_user)
-      #  まだcurrent_userメソッド作ってない
     else
       render :edit
     end
