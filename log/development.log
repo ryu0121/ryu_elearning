@@ -8080,3 +8080,301 @@ Processing by UsersController#new as HTML
   Rendered shared/_error_messages.html.erb (0.7ms)
   Rendered shared/_form.html.erb (22.5ms)
   Rendered users/new.html.erb within layouts/application (39.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 5809ms (Views: 5786.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 192.168.99.1 at 2019-11-11 13:34:18 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 202ms (Views: 182.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:34:24 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (0.6ms)
+  Rendered staticpages/home.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 201ms (Views: 200.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 192.168.99.1 at 2019-11-11 13:34:25 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#about as HTML
+  Rendering staticpages/about.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (1.0ms)
+  Rendered staticpages/about.html.erb within layouts/application (23.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 370ms (Views: 350.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:34:27 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (0.9ms)
+  Rendered staticpages/home.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 228ms (Views: 227.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:35:58 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (0.7ms)
+  Rendered staticpages/home.html.erb within layouts/application (23.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 5869ms (Views: 5867.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:37:34 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (0.8ms)
+  Rendered staticpages/home.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 5816ms (Views: 5815.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:38:35 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (1.3ms)
+  Rendered staticpages/home.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 6000ms (Views: 5997.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:38:56 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (0.8ms)
+  Rendered staticpages/home.html.erb within layouts/application (28.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 5900ms (Views: 5899.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:39:25 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (0.8ms)
+  Rendered staticpages/home.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 6086ms (Views: 6083.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.99.1 at 2019-11-11 13:40:05 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered shared/_form.html.erb (38.2ms)
+  Rendered users/new.html.erb within layouts/application (68.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 391ms (Views: 360.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 192.168.99.1 at 2019-11-11 13:40:11 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 200ms (Views: 181.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 192.168.99.1 at 2019-11-11 13:40:22 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WfMeEjNl3CRF13t+q2tVryU6O0Jn9qMWnbjBwEzrxc3+nuSpM4JIXQR3YKUApOd45AcBJmHQX0jziKPLUc16zg==", "session"=>{"email"=>"manchester.ryu.121@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'manchester.ryu.121@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://192.168.99.100:3005/
+Completed 200 OK in 239ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:40:22 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendering users/dashboard.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/dashboard.html.erb:5
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/users/dashboard.html.erb:5
+[36m  Disk Storage (1.1ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/0f2bc1d865feedcb6dc350ce4cafe4ec01c67adc5db0f40c6716ce29b2675072 (yes)[0m
+  Rendered users/dashboard.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 235ms (Views: 231.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d89072b1674bdd549b1b5fbcec6609f8f98373b4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--1a20f8aeb7ffaf19f62b92ab467858a7c434af9d/IMG_0593.JPG" for 192.168.99.1 at 2019-11-11 13:40:22 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveStorage::RepresentationsController#show as 
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d89072b1674bdd549b1b5fbcec6609f8f98373b4", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTXpBd2VETXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--1a20f8aeb7ffaf19f62b92ab467858a7c434af9d", "filename"=>"IMG_0593"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.2ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/0f2bc1d865feedcb6dc350ce4cafe4ec01c67adc5db0f40c6716ce29b2675072 (yes)[0m
+[36m  Disk Storage (4.9ms) [0m[34mGenerated URL for file at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/0f2bc1d865feedcb6dc350ce4cafe4ec01c67adc5db0f40c6716ce29b2675072 (http://192.168.99.100:3005/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUx6Qm1NbUpqTVdRNE5qVm1aV1ZrWTJJMlpHTXpOVEJqWlRSallXWmxOR1ZqTURGak5qZGhaR00xWkdJd1pqUXdZelkzTVRaalpUSTVZakkyTnpVd056SUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjIyLjk3NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--064ece6e8f35c9e6d51071c6e54f0745f512798d/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG)[0m
+Redirected to http://192.168.99.100:3005/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUx6Qm1NbUpqTVdRNE5qVm1aV1ZrWTJJMlpHTXpOVEJqWlRSallXWmxOR1ZqTURGak5qZGhaR00xWkdJd1pqUXdZelkzTVRaalpUSTVZakkyTnpVd056SUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjIyLjk3NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--064ece6e8f35c9e6d51071c6e54f0745f512798d/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUx6Qm1NbUpqTVdRNE5qVm1aV1ZrWTJJMlpHTXpOVEJqWlRSallXWmxOR1ZqTURGak5qZGhaR00xWkdJd1pqUXdZelkzTVRaalpUSTVZakkyTnpVd056SUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjIyLjk3NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--064ece6e8f35c9e6d51071c6e54f0745f512798d/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG" for 192.168.99.1 at 2019-11-11 13:40:22 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0593.JPG\"; filename*=UTF-8''IMG_0593.JPG", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUx6Qm1NbUpqTVdRNE5qVm1aV1ZrWTJJMlpHTXpOVEJqWlRSallXWmxOR1ZqTURGak5qZGhaR00xWkdJd1pqUXdZelkzTVRaalpUSTVZakkyTnpVd056SUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjIyLjk3NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--064ece6e8f35c9e6d51071c6e54f0745f512798d", "filename"=>"IMG_0593"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for 192.168.99.1 at 2019-11-11 13:40:29 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:51
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_form.html.erb (18.2ms)
+  Rendered users/edit.html.erb within layouts/application (34.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 264ms (Views: 240.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1" for 192.168.99.1 at 2019-11-11 13:40:32 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:51
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:5
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:5
+[36m  Disk Storage (1.5ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/d9c473e8c114c603cef032e445219a11028f1e76678e8bc068fd69a8c10058cd (yes)[0m
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 218ms (Views: 190.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d89072b1674bdd549b1b5fbcec6609f8f98373b4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTlRBd2VEVXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6138f18dea386e264e184e146de5f416fb002cd0/IMG_0593.JPG" for 192.168.99.1 at 2019-11-11 13:40:32 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveStorage::RepresentationsController#show as 
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d89072b1674bdd549b1b5fbcec6609f8f98373b4", "variation_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNTlRBd2VEVXdNQVk2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6138f18dea386e264e184e146de5f416fb002cd0", "filename"=>"IMG_0593"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.2ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/d9c473e8c114c603cef032e445219a11028f1e76678e8bc068fd69a8c10058cd (yes)[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/d9c473e8c114c603cef032e445219a11028f1e76678e8bc068fd69a8c10058cd (http://192.168.99.100:3005/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUwyUTVZelEzTTJVNFl6RXhOR00yTUROalpXWXdNekpsTkRRMU1qRTVZVEV4TURJNFpqRmxOelkyTnpobE9HSmpNRFk0Wm1RMk9XRTRZekV3TURVNFkyUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjMyLjM2NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--935d7bfbdd1bfe65b95412421eb40bb61db5c65a/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG)[0m
+Redirected to http://192.168.99.100:3005/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUwyUTVZelEzTTJVNFl6RXhOR00yTUROalpXWXdNekpsTkRRMU1qRTVZVEV4TURJNFpqRmxOelkyTnpobE9HSmpNRFk0Wm1RMk9XRTRZekV3TURVNFkyUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjMyLjM2NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--935d7bfbdd1bfe65b95412421eb40bb61db5c65a/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUwyUTVZelEzTTJVNFl6RXhOR00yTUROalpXWXdNekpsTkRRMU1qRTVZVEV4TURJNFpqRmxOelkyTnpobE9HSmpNRFk0Wm1RMk9XRTRZekV3TURVNFkyUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjMyLjM2NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--935d7bfbdd1bfe65b95412421eb40bb61db5c65a/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG" for 192.168.99.1 at 2019-11-11 13:40:32 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0593.JPG\"; filename*=UTF-8''IMG_0593.JPG", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUwyUTVZelEzTTJVNFl6RXhOR00yTUROalpXWXdNekpsTkRRMU1qRTVZVEV4TURJNFpqRmxOelkyTnpobE9HSmpNRFk0Wm1RMk9XRTRZekV3TURVNFkyUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjMyLjM2NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--935d7bfbdd1bfe65b95412421eb40bb61db5c65a", "filename"=>"IMG_0593"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 192.168.99.1 at 2019-11-11 13:43:40 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:51
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:5
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:5
+[36m  Disk Storage (0.8ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/d9c473e8c114c603cef032e445219a11028f1e76678e8bc068fd69a8c10058cd (yes)[0m
+  Rendered users/show.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 5725ms (Views: 5699.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUwyUTVZelEzTTJVNFl6RXhOR00yTUROalpXWXdNekpsTkRRMU1qRTVZVEV4TURJNFpqRmxOelkyTnpobE9HSmpNRFk0Wm1RMk9XRTRZekV3TURVNFkyUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjMyLjM2NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--935d7bfbdd1bfe65b95412421eb40bb61db5c65a/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG" for 192.168.99.1 at 2019-11-11 13:43:46 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0593.JPG\"; filename*=UTF-8''IMG_0593.JPG", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUwyUTVZelEzTTJVNFl6RXhOR00yTUROalpXWXdNekpsTkRRMU1qRTVZVEV4TURJNFpqRmxOelkyTnpobE9HSmpNRFk0Wm1RMk9XRTRZekV3TURVNFkyUUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjMyLjM2NVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--935d7bfbdd1bfe65b95412421eb40bb61db5c65a", "filename"=>"IMG_0593"}
+Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for 192.168.99.1 at 2019-11-11 13:44:23 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:51
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered shared/_form.html.erb (35.2ms)
+  Rendered users/edit.html.erb within layouts/application (60.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 373ms (Views: 335.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1" for 192.168.99.1 at 2019-11-11 13:45:02 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:51
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:5
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:5
+[36m  Disk Storage (0.9ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/d9c473e8c114c603cef032e445219a11028f1e76678e8bc068fd69a8c10058cd (yes)[0m
+  Rendered users/show.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 321ms (Views: 286.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-11 13:45:07 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendering users/dashboard.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/dashboard.html.erb:5
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/users/dashboard.html.erb:5
+[36m  Disk Storage (1.2ms) [0m[34mChecked if file exists at key: variants/RSFFyoNfpeHFVaYsuqGbBoHu/0f2bc1d865feedcb6dc350ce4cafe4ec01c67adc5db0f40c6716ce29b2675072 (yes)[0m
+  Rendered users/dashboard.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 195ms (Views: 190.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUx6Qm1NbUpqTVdRNE5qVm1aV1ZrWTJJMlpHTXpOVEJqWlRSallXWmxOR1ZqTURGak5qZGhaR00xWkdJd1pqUXdZelkzTVRaalpUSTVZakkyTnpVd056SUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjIyLjk3NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--064ece6e8f35c9e6d51071c6e54f0745f512798d/IMG_0593.JPG?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0593.JPG%22%3B+filename%2A%3DUTF-8%27%27IMG_0593.JPG" for 192.168.99.1 at 2019-11-11 13:45:07 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0593.JPG\"; filename*=UTF-8''IMG_0593.JPG", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSm5kbUZ5YVdGdWRITXZVbE5HUm5sdlRtWndaVWhHVm1GWmMzVnhSMkpDYjBoMUx6Qm1NbUpqTVdRNE5qVm1aV1ZrWTJJMlpHTXpOVEJqWlRSallXWmxOR1ZqTURGak5qZGhaR00xWkdJd1pqUXdZelkzTVRaalpUSTVZakkyTnpVd056SUdPZ1pGVkRvUVpHbHpjRzl6YVhScGIyNUpJa05wYm14cGJtVTdJR1pwYkdWdVlXMWxQU0pKVFVkZk1EVTVNeTVLVUVjaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh3TlRrekxrcFFSd1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlUiLCJleHAiOiIyMDE5LTExLTExVDEzOjQ1OjIyLjk3NloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--064ece6e8f35c9e6d51071c6e54f0745f512798d", "filename"=>"IMG_0593"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms)
+
+
