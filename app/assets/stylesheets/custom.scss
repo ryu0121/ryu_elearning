@@ -249,6 +249,8 @@ html, body{
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: .1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
   transition: 0.8s;
   &:hover{
     opacity: 0.8;
@@ -274,4 +276,118 @@ html, body{
   border-radius: 52%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+// follow-number
+.show-dash .stats {
+  margin-left: 17.3%;
+  padding: 0;
+  a {
+    float: left;
+    border-left: 1px solid gray;
+    color: gray;
+    padding: 0, 10px;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+// .follow-btn
+.follow-btn {
+  border-color: black;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 50%;
+  height: 10%;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.8s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &:hover{
+    background-color: rgba(24, 121, 248, 0.8);
+    color: white;
+  }
+}
+
+.unfollow-btn {
+  border-color: black;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 50%;
+  height: 10%;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.8s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &:hover{
+    background-color: rgba(241, 38, 23, 0.8);
+    color: white;
+  }
+}
+
+.stats-former {
+  padding-right: 5px;
+}
+.stats-latter {
+  padding-left: 5px;
+}
+
+// show-follow
+.nothing {
+  margin: 0 auto;
+  p {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 2.5em;
+  text-align: center;
+  }
+}
+
+.show-top {
+  margin: 0;
+}
+
+.user-group {
+  margin-left: 12%;
+}
+
+.follow-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 150;
+  font-size: 2.5em;
+  letter-spacing: .2em;
+}
+
+// follow-users
+
+.follow-body {
+  background-color: rgb(255, 247, 247);
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+}
+
+.follow-user {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.5em;
+  margin-left: 12px;
+  margin-top: 15px;
+  font-weight:bold;
+  list-style: none;
+  display: block;
+  color: black;
+  &:hover {
+    opacity: 0.7;
+    color: black;
+  }
 }

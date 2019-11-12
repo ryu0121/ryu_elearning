@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :following, :followers]
   def new
     @user = User.new
   end
@@ -38,6 +38,18 @@ class UsersController < ApplicationController
     @user.destroy
     flash[:success] = "Successfully deleted"
     redirect_to users_url
+  end
+
+  def following
+    @title = "Following"
+    @users = @user.following.paginate(page: params[:page], per_page: 10)
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @users = @user.followers.paginate(page: params[:page], per_page: 10)
+    render 'show_follow'
   end
 
   private
