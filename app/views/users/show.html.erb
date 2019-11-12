@@ -1,15 +1,22 @@
-<div class='jumbotron'>
-        <% if @user.photo.attached? %>
-            <%= image_tag @user.photo.variant(resize:'100x100').processed, class:"photo" %>
-        <% else %>
-            <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
-        <% end %>
-    <div class="row">
-        <div class="col-8">
-            <div class="media-body ml-3">
-                <h1><%= @user.name %></h1>
-                <p><%= @user.email %></p>
+<div class="row show-top">
+    <div class="col-4 mt-4">
+        <div class="dashboard show-dash border-right">
+            <%if current_user.photo.attached? %>
+                <%= image_tag current_user.photo.variant(resize:'300x300').processed, class:"photo-show" %>
+            <% else %>
+                <%= image_tag 'cat.jpg', class: "photo-show", alt: '元の画像' %>
+            <% end %>
+            <div class="lerned-history mt-4">
+            <p class="learned-number-name"><%= current_user.name %></p>
+            </div>
+            <hr class="line mt-4 mb-4">
+            <div class="lerned-history mt-4">
+                <%= link_to 'Edit Profile', edit_user_path(current_user), class: "btn btn-edit" %>
             </div>
         </div>
+    </div>
+
+    <div class="col-8 mt-4", style="padding-right: 0px">
+        <p class="learned-number-title text-center">Activities</p>
     </div>
 </div>

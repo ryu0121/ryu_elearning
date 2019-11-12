@@ -11,8 +11,8 @@ class SessionsController < ApplicationController
       flash[:info] = "Successfully logged in"
       redirect_to root_url
     else
-      render :new
       flash.now[:danger] = "Invalid Credentions"
+      render :new
     end
   end
 

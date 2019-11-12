@@ -9,7 +9,7 @@
         <div class="col-6">
             <div class="media mb-3">
                 <% if user.photo.attached? %>
-            <%= image_tag user.photo.variant(resize:'500x500').processed, class:"photo" %>
+            <%= image_tag user.photo.variant(resize:'200x200').processed, class:"photo" %>
                 <% else %>
                     <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
                 <% end %>
