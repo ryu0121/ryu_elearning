@@ -1,15 +1,15 @@
 <% @user ||= current_user %>
 <div class="stats">
-  <a href="<%= following_user_path(@user) %>", class="learned-number stats-former">
-    <strong id="following" class="stat">
-      <%= @user.following.count %>
-    </strong>
+    <a href="<%= following_user_path(@user) %>", class="learned-number stats-former">
+        <strong id="following" class="stat">
+            <%= @user.following.count %>
+        </strong>
     following
-  </a>
-  <a href="<%= followers_user_path(@user) %>", class="learned-number stats-latter">
-    <strong id="followers" class="stat">
-      <%= @user.followers.count %>
-    </strong>
-    followers
-  </a>
+    </a>
+    <a href="<%= followers_user_path(@user) %>", class="learned-number stats-latter">
+        <strong id="followers" class="stat">
+            <%= @user.followers.count %>
+        </strong>
+        followers
+    </a>
 </div>

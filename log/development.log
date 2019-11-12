@@ -19972,3 +19972,534 @@ Completed 200 OK in 54595ms (Views: 54571.3ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 54482ms (Views: 54479.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 192.168.99.1 at 2019-11-12 09:00:36 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticpagesController#home as HTML
+  Rendering staticpages/home.html.erb within layouts/application
+  Rendered shared/_staticparts.html.erb (5.0ms)
+  Rendered staticpages/home.html.erb within layouts/application (43.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 2796ms (Views: 2775.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 192.168.99.1 at 2019-11-12 09:00:42 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered shared/_form.html.erb (2776.7ms)
+  Rendered users/new.html.erb within layouts/application (2852.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 3467ms (Views: 3352.9ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/login" for 192.168.99.1 at 2019-11-12 09:00:50 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 554ms (Views: 499.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 192.168.99.1 at 2019-11-12 09:00:55 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zRxCXcS6/eRnOJLZr9D1gm5WL3TP2TlyJeypzLjEyrXOQFJ9bAspixl7Gl9vzE41TwQQIEiHtnecDOXgnuMeeg==", "session"=>{"email"=>"manchester.ryu.121@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'manchester.ryu.121@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://192.168.99.100:3005/
+Completed 200 OK in 560ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 192.168.99.1 at 2019-11-12 09:00:56 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticpagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendering users/dashboard.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/dashboard.html.erb:5
+  Rendered users/dashboard.html.erb within layouts/application (174.1ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+Completed 200 OK in 683ms (Views: 661.2ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/users/1" for 192.168.99.1 at 2019-11-12 09:01:02 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:4
+  [1m[35m (13.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/shared/_stats.html.erb:5
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/shared/_stats.html.erb:11
+  Rendered shared/_stats.html.erb (134.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered users/_follow_form.html.erb (1.3ms)
+  Rendered users/show.html.erb within layouts/application (261.0ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 895ms (Views: 805.9ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/users/1/following" for 192.168.99.1 at 2019-11-12 09:01:08 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1 LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/show_follow.html.erb:10
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 11 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 12 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 13 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 14 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:13
+  Rendered users/show_follow.html.erb within layouts/application (86.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.6ms)
+Completed 200 OK in 664ms (Views: 650.8ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/users/1/following" for 192.168.99.1 at 2019-11-12 09:01:53 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:7
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1 LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/show_follow.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 11 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 12 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 13 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 14 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:30
+  Rendered users/show_follow.html.erb within layouts/application (86.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.3ms)
+Completed 200 OK in 668ms (Views: 642.0ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/users/1/following" for 192.168.99.1 at 2019-11-12 09:02:16 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:7
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1 LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/show_follow.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 11 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 12 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 13 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 14 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:11
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:30
+  Rendered users/show_follow.html.erb within layouts/application (89.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.3ms)
+Completed 200 OK in 667ms (Views: 653.4ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/users/1/following" for 192.168.99.1 at 2019-11-12 09:03:22 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1 LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/show_follow.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 11 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 12 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 13 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 14 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show_follow.html.erb:9
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show_follow.html.erb:28
+  Rendered users/show_follow.html.erb within layouts/application (64.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.5ms)
+Completed 200 OK in 590ms (Views: 571.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/users" for 192.168.99.1 at 2019-11-12 09:03:26 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (74.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (5.6ms)
+Completed 200 OK in 546ms (Views: 492.1ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users" for 192.168.99.1 at 2019-11-12 09:03:51 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (87.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (7.6ms)
+Completed 200 OK in 33043ms (Views: 32994.9ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users" for 192.168.99.1 at 2019-11-12 09:04:36 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (83.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.8ms)
+Completed 200 OK in 575ms (Views: 536.9ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/users/1" for 192.168.99.1 at 2019-11-12 09:04:38 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/shared/_stats.html.erb:5
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/shared/_stats.html.erb:11
+  Rendered shared/_stats.html.erb (10.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered users/_follow_form.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (135.4ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 684ms (Views: 646.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users" for 192.168.99.1 at 2019-11-12 09:04:41 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` LIMIT 10 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 4 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 7 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 8 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 9 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 10 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (80.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (5.4ms)
+Completed 200 OK in 564ms (Views: 516.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/users/2" for 192.168.99.1 at 2019-11-12 09:04:43 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'photo' LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/shared/_stats.html.erb:5
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/shared/_stats.html.erb:11
+  Rendered shared/_stats.html.erb (6.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:33
+  Rendered users/_follow.html.erb (13.9ms)
+  Rendered users/_follow_form.html.erb (53.9ms)
+  Rendered users/show.html.erb within layouts/application (137.3ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+Completed 200 OK in 680ms (Views: 644.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/2/following" for 192.168.99.1 at 2019-11-12 09:04:45 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:28
+  Rendered users/show_follow.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.3ms)
+Completed 200 OK in 530ms (Views: 524.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2/following" for 192.168.99.1 at 2019-11-12 09:05:02 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:28
+  Rendered users/show_follow.html.erb within layouts/application (13.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (6.6ms)
+Completed 200 OK in 686ms (Views: 679.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/2/following" for 192.168.99.1 at 2019-11-12 09:05:59 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:28
+  Rendered users/show_follow.html.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (7.1ms)
+Completed 200 OK in 13721ms (Views: 13712.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/2/following" for 192.168.99.1 at 2019-11-12 09:06:45 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:28
+  Rendered users/show_follow.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 5535ms (ActiveRecord: 4.6ms)
+
+
+  
+ActionView::Template::Error (Error: property "text-center" must be followed by a ':'
+        on line 352:3 of app/assets/stylesheets/custom.scss
+>>   text-center
+
+   --^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    11: 
+  
+app/assets/stylesheets/custom.scss:352
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2890334516909251722_47207999592360'
+app/controllers/users_controller.rb:46:in `following'
+Started GET "/users/2/following" for 192.168.99.1 at 2019-11-12 09:07:06 +0000
+Cannot render console from 192.168.99.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:62
+  Rendering users/show_follow.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:5
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show_follow.html.erb:28
+  Rendered users/show_follow.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:12
+  Rendered layouts/_header.html.erb (7.4ms)
+Completed 200 OK in 12841ms (Views: 12833.8ms | ActiveRecord: 2.2ms)
+
+
