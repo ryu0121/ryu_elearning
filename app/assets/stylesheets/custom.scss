@@ -236,6 +236,10 @@ html, body{
   margin-left: 40%;
 }
 
+.learned-history-admin {
+  height: 50%;
+}
+
 .row {
   width: 100%;
 }
@@ -259,11 +263,29 @@ html, body{
   }
 }
 
+.btn-admin {
+  border-color: black;
+  padding-top: 2%;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 50%;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+  transition: 0.8s;
+  &:hover{
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+  }
+}
+
 // show
 .show-top {
   padding-top: 30px;
   background-color: rgb(255, 247, 247);
-  height: 550px;
+  height: 650px;
 }
 
 .show-dash {

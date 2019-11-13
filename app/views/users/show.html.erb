@@ -14,11 +14,8 @@
                 <%= render 'shared/stats' %>
             </div>
             <%= render 'follow_form' if logged_in? %>
-            <% if current_user?(@user) %>
-                <div class="lerned-history mt-4">
-                    <%= link_to 'Edit Profile', edit_user_path(current_user), class: "btn btn-edit" %>
-                </div>
-            <% end %>
+            <%= render 'edit_button' if current_user?(@user) %>
+            <%= render 'admin_button' if current_user.admin? %>
         </div>
     </div>
 
