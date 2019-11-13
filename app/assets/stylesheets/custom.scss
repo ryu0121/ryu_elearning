@@ -211,10 +211,10 @@ html, body{
 }
 
 .learned-number-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 150;
-  font-size: 2.5em;
-  letter-spacing: .2em;
+  font-size: 2.8em;
+  letter-spacing: .1em;
 }
 
 .dashboard {
@@ -234,6 +234,10 @@ html, body{
 
 .learned-history {
   margin-left: 40%;
+}
+
+.learned-history-admin {
+  height: 50%;
 }
 
 .row {
@@ -259,11 +263,29 @@ html, body{
   }
 }
 
+.btn-admin {
+  border-color: black;
+  padding-top: 2%;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 50%;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+  transition: 0.8s;
+  &:hover{
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+  }
+}
+
 // show
 .show-top {
   padding-top: 30px;
   background-color: rgb(255, 247, 247);
-  height: 550px;
+  height: 650px;
 }
 
 .show-dash {
@@ -362,10 +384,11 @@ html, body{
 }
 
 .follow-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 150;
-  font-size: 2.5em;
-  letter-spacing: .2em;
+  font-size: 2.8em;
+  letter-spacing: .1em;
+  padding-top: 40px;
 }
 
 // follow-users
@@ -373,7 +396,7 @@ html, body{
 .follow-body {
   background-color: rgb(255, 247, 247);
   background-size: cover;
-  height: 750px;
+  height: 790px;
   width: 100%;
 }
 
@@ -390,4 +413,41 @@ html, body{
     opacity: 0.7;
     color: black;
   }
+}
+
+// admin-page
+.admin-title {
+  font-family: 'Bitter', serif;
+  font-weight: 150;
+  font-size: 2.8em;
+  letter-spacing: .1em;
+  padding-bottom: 30px;
+}
+
+.btn-adminpage {
+  border-color: black;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 20%;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+  transition: 0.8s;
+  &:hover{
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+  }
+}
+
+.admin-top {
+  margin-left: 13%;
+}
+
+.admin-text {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  letter-spacing: .05em;
 }

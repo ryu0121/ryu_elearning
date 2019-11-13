@@ -10,5 +10,8 @@ Rails.application.routes.draw do
     end
   end
   resources :relationships, only: [:create, :destroy]
+  namespace :admin do
+    get '/home', to: 'users#home'
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
