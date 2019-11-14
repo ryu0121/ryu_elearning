@@ -13,6 +13,28 @@ html, body{
 }
 
 // header-css
+.link-title {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(235, 0, 0);
+  padding-left: 0.5px;
+  transition: 0.6s;
+  &:hover {
+    opacity: 0.8;
+    color: rgb(255, 10, 10);
+  }
+}
+
+.far {
+  color:rgb(235, 0, 0);
+  transition: 0.6s;
+  &:hover {
+    opacity: 0.8;
+    color: rgb(255, 10, 10);
+  }
+}
+
 .nav-link {
   font-family: 'Lobster', cursive;
   font-size: 1.3em;
@@ -20,6 +42,11 @@ html, body{
 
 .dropdown {
   transition: 0.8s;
+}
+
+.dropdown.show > .dropdown-toggle {
+  background-color: #ffb8b8;
+  border-radius: 5px;
 }
 
 .dropdown-item {
@@ -88,7 +115,7 @@ html, body{
 }
 
 .top-textarea {
-  color: rgb(236, 53, 53);
+  color: rgb(245, 245, 245);
   font-size: 1.3em;
   font-family: 'Frank Ruhl Libre', serif;
 }
@@ -96,11 +123,12 @@ html, body{
 .about{
   font-size: 4em;
   font-family: 'Frank Ruhl Libre', serif;
+  color: red;
 }
 
 .signup .btn {
   background-color: rgb(8, 8, 8);
-  transition: 0.8s;
+  transition: 0.3s;
   color: white;
   font-family: 'Frank Ruhl Libre', serif;
   letter-spacing: .1em;
@@ -183,7 +211,7 @@ html, body{
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   border: none;
-  transition: 0.8s;
+  transition: 0.3s;
   height: 40px;
   &:hover {
     opacity: 0.8;
@@ -213,7 +241,7 @@ html, body{
 .learned-number-title {
   font-family: 'Bitter', serif;
   font-weight: 150;
-  font-size: 2.8em;
+  font-size: 2.5em;
   letter-spacing: .1em;
 }
 
@@ -255,7 +283,7 @@ html, body{
   letter-spacing: .1em;
   margin-top: 20px;
   margin-bottom: 10px;
-  transition: 0.8s;
+  transition: 0.3s;
   &:hover{
     opacity: 0.8;
     background-color: black;
@@ -273,7 +301,7 @@ html, body{
   font-weight: 300;
   letter-spacing: .1em;
   margin-bottom: 10px;
-  transition: 0.8s;
+  transition: 0.3s;
   &:hover{
     opacity: 0.8;
     background-color: black;
@@ -332,7 +360,7 @@ html, body{
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: .1em;
-  transition: 0.8s;
+  transition: 0.3s;
   margin-top: 10px;
   margin-bottom: 10px;
   &:hover{
@@ -349,7 +377,7 @@ html, body{
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: .1em;
-  transition: 0.8s;
+  transition: 0.3s;
   margin-top: 10px;
   margin-bottom: 10px;
   &:hover{
@@ -421,7 +449,7 @@ html, body{
   font-weight: 150;
   font-size: 2.8em;
   letter-spacing: .1em;
-  padding-bottom: 30px;
+  padding-top: 40px;
 }
 
 .btn-adminpage {
@@ -441,6 +469,25 @@ html, body{
   }
 }
 
+.back {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.5em;
+  font-weight: 250;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  color: black;
+  list-style: none;
+  &:hover{
+    opacity: 0.8;
+    color: green;
+  }
+}
+
+.back-parent {
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
 .admin-top {
   margin-left: 13%;
 }
@@ -450,4 +497,70 @@ html, body{
   font-weight: 300;
   font-size: 1.4em;
   letter-spacing: .05em;
+}
+
+// administrate users
+.administrate-users {
+  background-color: rgb(255, 247, 247);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 970px;
+  width: 100%;
+  position: relative;
+}
+
+table {
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: 'Frank Ruhl Libre', serif;
+  th {
+    text-align: center;
+    letter-spacing: .1em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.3em;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+  td {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.2em;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+}
+
+.admin-give-btn {
+  border-color: black;
+  background-color: rgba(24, 121, 248, 1);
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  width: 88%;
+  &:hover{
+    background-color: rgba(24, 121, 248, 0.8);
+    color: white;
+  }
+}
+
+.admin-delete-btn {
+  border-color: black;
+  background-color: rgba(241, 38, 23, 1);
+  padding-left: 1%;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  width: 88%;
+  &:hover{
+    background-color: rgba(241, 38, 23, 0.8);
+    color: white;
+  }
 }
