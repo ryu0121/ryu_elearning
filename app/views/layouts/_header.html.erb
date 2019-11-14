@@ -2,7 +2,9 @@
     <div class="container">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <strong><%= link_to 'Elearning', root_path, class: 'nav-link' %></strong>
+                <%= link_to root_path, style: "text-decoration: none;", method: :get do %>
+                    <i class="far fa-gem"></i><span class= 'link-title'>Elearning</span>
+                <% end %>
             </li>
         </ul>
         <ul class="navbar-nav justify-content-end">
