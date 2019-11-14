@@ -564,3 +564,39 @@ table {
     color: white;
   }
 }
+.foot-of-index {
+  position: relative;
+}
+.back-index {
+  position: absolute;
+    top: 8%;
+    left: 20%;
+}
+
+// .administrate-categories
+.btn-new-category {
+  border-color: black;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 35%;
+  height: 10%;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  &:hover{
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+  }
+}
+
+.category-btn-group {
+  margin-left: 39%;
+}
+
+.back-index-test {
+  position: absolute;
+    left: 20%;
+}
