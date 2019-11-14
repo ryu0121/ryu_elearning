@@ -9,13 +9,13 @@
             <th>DESCRIPTION</th>
             <th>SETTINGS</th>
         </tr>
-        <% @users.each do |user| %>
+        <% @categories.each do |category| %>
         <tr>
-            <td><%= user.name %></td>
-            <td><%= user.email %></td>
+            <td><%= category.title %></td>
+            <td><%= category.description %></td>
             <td>
-                <%= link_to('EDIT', '#', method: :delete) %>/
-                <%= link_to('DELETE', '#', method: :patch) %>
+                <%= link_to('EDIT', '#', method: :delete, class: "edit-btn", style: "text-decoration: none;") %>/
+                <%= link_to('DELETE', '#', method: :patch, class: "delete-btn", style: "text-decoration: none;") %>
             </td>
         </tr>
         <% end %>

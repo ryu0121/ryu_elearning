@@ -1,6 +1,6 @@
 class Admin::CategoriesController < ApplicationController
   def index
-    @users = User.paginate(page: params[:page], per_page: 10)
+    @categories = Category.paginate(page: params[:page], per_page: 10)
   end
 
   def new
@@ -13,15 +13,8 @@ class Admin::CategoriesController < ApplicationController
       flash[:success] = "Successfully Created !"
       redirect_to admin_categories_url
     else
-      flash.now[:danger] = "Invalid category"
       render :new
     end
-  end
-
-  def update
-  end
-
-  def destroy
   end
 
   private
