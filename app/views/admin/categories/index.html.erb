@@ -1,0 +1,24 @@
+<div class="administrate-users">
+    <p class="text-center admin-title">ADMINISTRATER CATEGORIES</p>
+    <div class="pb-4 category-btn-group">
+        <%= link_to 'New Category', '#', class: "btn btn-new-category" %>
+    </div>
+    <table border="1">
+        <tr>
+            <th>TITLE</th>
+            <th>DESCRIPTION</th>
+            <th>SETTINGS</th>
+        </tr>
+        <% @users.each do |user| %>
+        <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td>
+                <%= link_to('EDIT', '#', method: :delete) %>/
+                <%= link_to('DELETE', '#', method: :patch) %>
+            </td>
+        </tr>
+        <% end %>
+    </table>
+    <%= link_to 'Back', admin_home_path, class: "back back-index-test", style: "text-decoration: none;" %>
+</div>
