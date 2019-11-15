@@ -476,7 +476,7 @@ html, body{
   letter-spacing: .1em;
   transition: 0.3s;
   color: black;
-  list-style: none;
+  text-decoration: none !important;
   &:hover{
     opacity: 0.8;
     color: green;
@@ -568,6 +568,7 @@ table {
   position: relative;
 }
 .back-index {
+  text-decoration: none !important;
   position: absolute;
     top: 8%;
     left: 20%;
@@ -597,6 +598,7 @@ table {
 }
 
 .back-index-test {
+  text-decoration: none !important;
   position: absolute;
     left: 20%;
 }
@@ -608,6 +610,7 @@ table {
   letter-spacing: .1em;
   transition: 0.3s;
   color: black;
+  text-decoration: none;
   &:hover {
     opacity: 0.9;
     color: green;
@@ -621,6 +624,7 @@ table {
   letter-spacing: .1em;
   transition: 0.3s;
   color: black;
+  text-decoration: none;
   &:hover {
     opacity: 0.9;
     color: red;
@@ -638,7 +642,13 @@ table {
 
 // category-new
 .back-new {
+  text-decoration: none !important;
   position: absolute;
     top: 75%;
     left: 25%;
+}
+
+.title-admin {
+  font-family: 'Frank Ruhl Libre', serif;
+  color: white;
 }
