@@ -1,6 +1,7 @@
-<div class="form-image">
+<div class="form-image-session">
     <div class="col-6 mx-auto form-top pt-4">
         <h1 class="text-center pb-3 border-bottom", style="font-family: 'Frank Ruhl Libre', serif; color: white">Create Category</h1>
         <%= render partial: 'form', locals: { category: [:admin, @category] } %>
     </div>
+    <%= link_to 'Back', admin_categories_path, class: "back back-new", style: "text-decoration: none;" %>
 </div>
