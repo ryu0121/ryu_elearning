@@ -171,9 +171,7 @@ html, body{
   background-color: rgba(26, 25, 25, 0.7);
   border-radius: 10px;
   padding-bottom: 1%;
-  position: absolute;
-    top: 5%;
-    left: 24%
+  margin-left: 25%;
 }
 
 .form-group .form-text {
@@ -641,12 +639,24 @@ table {
 }
 
 // category-new
+
+.create-top {
+  background-color: rgb(255, 247, 247);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 625px;
+  padding-top: 5%;
+  width: 100%;
+  position: relative;
+}
+
 .back-new {
   text-decoration: none !important;
-  z-index: 10px;
-  position: absolute;
-    top: 75%;
-    left: 25%;
+}
+
+.back-group {
+  margin-left: 28%;
+  margin-top: 2%;
 }
 
 .title-admin {
