@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "Successfully Created"
+      flash[:success] = "Successfully Created !"
       redirect_to root_url
     else
       render :new
@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-       flash[:success] ="Successfully updated"
+       flash[:success] ="Successfully updated !"
        redirect_to user_url(current_user)
     else
       render :edit

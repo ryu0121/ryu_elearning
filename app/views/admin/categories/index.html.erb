@@ -1,7 +1,7 @@
-<div class="administrate-users">
+<div class="administrate-categories">
     <p class="text-center admin-title">ADMINISTRATER CATEGORIES</p>
     <div class="pb-4 category-btn-group">
-        <%= link_to 'New Category', '#', class: "btn btn-new-category" %>
+        <%= link_to 'New Category', new_admin_category_path, class: "btn btn-new-category" %>
     </div>
     <table border="1">
         <tr>
@@ -9,16 +9,21 @@
             <th>DESCRIPTION</th>
             <th>SETTINGS</th>
         </tr>
-        <% @users.each do |user| %>
+        <% @categories.each do |category| %>
         <tr>
-            <td><%= user.name %></td>
-            <td><%= user.email %></td>
+            <td><%= category.title %></td>
+            <td><%= category.description %></td>
             <td>
-                <%= link_to('EDIT', '#', method: :delete) %>/
-                <%= link_to('DELETE', '#', method: :patch) %>
+                <%= link_to('EDIT', '#', method: :delete, class: "edit-btn") %>/
+                <%= link_to('DELETE', '#', method: :patch, class: "delete-btn") %>
             </td>
         </tr>
         <% end %>
     </table>
-    <%= link_to 'Back', admin_home_path, class: "back back-index-test", style: "text-decoration: none;" %>
+    <div class="foot-of-index">
+        <%= link_to 'Back', admin_home_path, class: "back back-index" %>
+        <div class="paginate text-center mt-4">
+            <%= will_paginate %>
+        </div>
+    </div>
 </div>
