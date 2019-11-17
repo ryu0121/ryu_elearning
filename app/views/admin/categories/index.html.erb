@@ -14,8 +14,8 @@
             <td><%= category.title %></td>
             <td><%= category.description %></td>
             <td>
-                <%= link_to('EDIT', '#', method: :delete, class: "edit-btn") %>/
-                <%= link_to('DELETE', '#', method: :patch, class: "delete-btn") %>
+                <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
+                <%= link_to('DELETE', admin_category_path(category), method: :delete, class: "delete-btn") %>
             </td>
         </tr>
         <% end %>
