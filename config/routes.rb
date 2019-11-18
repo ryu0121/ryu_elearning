@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    get 'words/index'
+  end
   root 'staticpages#home'
   get '/about', to: 'staticpages#about'
   get '/login', to: 'sessions#new'
@@ -13,7 +16,9 @@ Rails.application.routes.draw do
   namespace :admin do
     get '/home', to: 'users#home'
     resources :users, only: [:index, :update, :destroy]
-    resources :categories, only: [:index, :new, :edit, :create, :update, :destroy]
+    resources :categories, only: [:index, :new, :edit, :create, :update, :destroy] do
+        resources :words, only: [:index]
+    end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

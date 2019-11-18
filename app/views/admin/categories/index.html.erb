@@ -11,12 +11,13 @@
         </tr>
         <% @categories.each do |category| %>
         <tr>
-            <td><%= category.title %></td>
+            <td><%= link_to category.title, admin_category_words_path(category), class: "category-title" %></td>
             <td><%= category.description %></td>
             <td>
                 <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
                 <%= link_to('DELETE', admin_category_path(category), method: :delete, data: { 
-                    confirm: 'Are you sure?' }, class: "delete-btn") %>
+                    confirm: 'Are you sure?', cancel: 'Cancel', commit: 'Sure'
+                 } , title: 'Confirmation', class: "delete-btn") %>
             </td>
         </tr>
         <% end %>
