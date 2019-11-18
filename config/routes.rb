@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  namespace :admin do
-    get 'words/index'
-  end
   root 'staticpages#home'
   get '/about', to: 'staticpages#about'
   get '/login', to: 'sessions#new'
