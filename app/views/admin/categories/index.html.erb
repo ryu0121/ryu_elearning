@@ -15,7 +15,8 @@
             <td><%= category.description %></td>
             <td>
                 <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
-                <%= link_to('DELETE', admin_category_path(category), method: :delete, class: "delete-btn") %>
+                <%= link_to('DELETE', admin_category_path(category), method: :delete, data: { 
+                    confirm: 'Are you sure?' }, class: "delete-btn") %>
             </td>
         </tr>
         <% end %>
