@@ -1,0 +1,26 @@
+<div class="word-create-back">    
+    <div class="col-4 word-create-box pt-2 pb-4">
+        <h1 class="text-center title-admin">Create Word</h1>
+        <%= form_for [:admin, @category, @word] do |f| %>
+            <%= render 'shared/error_messages', object: f.object %>
+            <div class="word-group mb-3">
+                <%= f.label :content, "Word", class: "form-text" %>
+                <%= f.text_field :content, class: "form-control" %>
+            </div>
+            <%= f.fields_for :choices do |choice| %>
+                <div class="word-group mb-2">
+                    <%= choice.label :content, "Choice", class: "form-text" %>
+                    <%= choice.text_field :content, class: "form-control" %>
+                    <%= choice.check_box :isCorrect %>
+                    <%= label_tag :isCorrect, "This is the answer.", class: "form-text" %>
+                </div>
+            <% end %>
+            <%= f.submit "Crate word", class: 'btn create-btn btn-block' %>
+        <% end %>
+    </div>
+
+    <div class="back-group">
+        <%= link_to 'Back', admin_category_words_path, class: "back back-new" %>
+    </div>
+
+</div>

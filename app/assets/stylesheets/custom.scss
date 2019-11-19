@@ -575,6 +575,7 @@ table {
 }
 
 // .administrate-categories
+
 .btn-new-category {
   border-color: black;
   font-family: 'Frank Ruhl Libre', serif;
@@ -585,7 +586,7 @@ table {
   letter-spacing: .1em;
   margin-top: 20px;
   margin-bottom: 10px;
-  transition: 0.3s;
+  transition: 0.5s;
   &:hover{
     opacity: 0.8;
     background-color: black;
@@ -633,10 +634,8 @@ table {
 
 .administrate-categories {
   background-color: rgb(255, 247, 247);
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 520px;
+  height: 700px;
   position: relative;
 }
 
@@ -679,4 +678,35 @@ table {
     opacity: 0.9;
     color: rgb(52, 52, 236);
   }
+}
+
+.table,td,th {
+  width:5%;
+}
+
+.description {
+  width: 50%;
+}
+
+// word create
+.word-create-box {
+  background-color: rgba(26, 25, 25, 0.7);
+  border-radius: 10px;
+  margin-left: 33%;
+  padding-bottom: 1%;
+}
+
+.word-group .form-text {
+  font-family: 'Frank Ruhl Libre', serif;
+  color: white;
+  display: inline;
+}
+
+.word-create-back {
+  background-color: rgb(255, 247, 247);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 820px;
+  width: 100%;
+  padding-top: 5%;
 }

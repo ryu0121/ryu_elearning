@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_18_015441) do
+ActiveRecord::Schema.define(version: 2019_11_18_033914) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -40,6 +40,15 @@ ActiveRecord::Schema.define(version: 2019_11_18_015441) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "choices", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.boolean "isCorrect", default: false
+    t.string "content"
+    t.bigint "word_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["word_id"], name: "index_choices_on_word_id"
+  end
+
   create_table "relationships", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "follower_id"
     t.integer "followed_id"
@@ -67,4 +76,5 @@ ActiveRecord::Schema.define(version: 2019_11_18_015441) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "choices", "words"
 end
