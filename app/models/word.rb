@@ -5,6 +5,6 @@ class Word < ApplicationRecord
   validates :content, presence: true, length: {maximum: 50}
 
   def correct_answer
-    choices.find_by(isCorrect: true).content
+    choices.find_by(isCorrect: true).try(:content)
   end
 end
