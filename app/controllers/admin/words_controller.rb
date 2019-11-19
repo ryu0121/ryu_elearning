@@ -11,8 +11,12 @@ class Admin::WordsController < ApplicationController
     3.times { @word.choices.build }
   end
 
-  def create
+  def edit
+    @category = Category.find(params[:category_id])
+    @word = Word.find(params[:id])
+  end
 
+  def create
     @category = Category.find(params[:category_id])
     @word = @category.words.build(word_params)
     if @word.save
@@ -21,6 +25,23 @@ class Admin::WordsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def update
+    @word = Word.find(params[:id])
+    if @word.update(word_params)
+      flash[:success] = "Successfully Updated !"
+      redirect_to admin_category_words_url
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @word = Word.find(params[:id])
+    @word.destroy
+    flash[:success] = "Successfully Deleted"
+    redirect_to admin_category_words_url
   end
 
 

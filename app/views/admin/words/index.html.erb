@@ -15,8 +15,8 @@
                 <td><%= word.content %></td>
                 <td><%= word.correct_answer %></td>
                 <td>
-                    <%= link_to('EDIT', "#", class: "edit-btn") %>/
-                    <%= link_to('DELETE', "#", method: :delete, data: { 
+                    <%= link_to('EDIT', edit_admin_category_word_path(@category, word), class: "edit-btn") %>/
+                    <%= link_to('DELETE', admin_category_word_path(@category, word), method: :delete, data: { 
                         confirm: 'Are you sure?', cancel: 'Cancel', commit: 'Sure'
                     } , title: 'Confirmation', class: "delete-btn") %>
                 </td>
