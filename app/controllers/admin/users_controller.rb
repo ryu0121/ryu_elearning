@@ -1,4 +1,5 @@
 class Admin::UsersController < ApplicationController
+  before_action :admin_user
   def home
   end
 

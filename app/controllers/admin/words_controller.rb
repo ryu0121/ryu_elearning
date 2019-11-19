@@ -1,4 +1,6 @@
 class Admin::WordsController < ApplicationController
+  before_action :admin_user
+
   def index
     @category = Category.find(params[:category_id])
     # 上はwords_controllerの中で、rails routesで確認したrouteが:idの代わりに:category_idを使っているから

@@ -15,7 +15,7 @@
             </div>
             <%= render 'follow_form' if logged_in? %>
             <%= render 'edit_button' if current_user?(@user) %>
-            <%= render 'admin_button' if current_user.admin? %>
+            <%= render 'admin_button' if current_user.admin? && admin_user?(@user) %>
         </div>
     </div>
 
