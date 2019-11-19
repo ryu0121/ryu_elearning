@@ -3,25 +3,27 @@
     <div class="pb-4 category-btn-group">
         <%= link_to 'New Category', new_admin_category_path, class: "btn btn-new-category" %>
     </div>
-    <table border="1">
-        <tr>
-            <th>TITLE</th>
-            <th>DESCRIPTION</th>
-            <th>SETTINGS</th>
-        </tr>
-        <% @categories.each do |category| %>
-        <tr>
-            <td><%= link_to category.title, admin_category_words_path(category), class: "category-title" %></td>
-            <td><%= category.description %></td>
-            <td>
-                <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
-                <%= link_to('DELETE', admin_category_path(category), method: :delete, data: { 
-                    confirm: 'Are you sure?', cancel: 'Cancel', commit: 'Sure'
-                 } , title: 'Confirmation', class: "delete-btn") %>
-            </td>
-        </tr>
-        <% end %>
-    </table>
+    <div class ="row text-center col-6 offset-md-3">
+        <table border="1">
+            <tr>
+                <th>TITLE</th>
+                <th>DESCRIPTION</th>
+                <th>SETTINGS</th>
+            </tr>
+            <% @categories.each do |category| %>
+            <tr>
+                <td><%= link_to category.title, admin_category_words_path(category), class: "category-title" %></td>
+                <td class="description"><%= category.description %></td>
+                <td>
+                    <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
+                    <%= link_to('DELETE', admin_category_path(category), method: :delete, data: { 
+                        confirm: 'Are you sure?', cancel: 'Cancel', commit: 'Sure'
+                    } , title: 'Confirmation', class: "delete-btn") %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+    </div>
     <div class="foot-of-index">
         <%= link_to 'Back', admin_home_path, class: "back back-index" %>
         <div class="paginate text-center mt-4">

@@ -1,0 +1,11 @@
+<div class="word-create-back">    
+    <div class="col-4 word-create-box pt-2 pb-4">
+        <h1 class="text-center title-admin">Create Word</h1>
+        <%= render partial: 'form', locals: { word: [:admin, @category, @word] } %>
+    </div>
+
+    <div class="back-group">
+        <%= link_to 'Back', admin_category_words_path, class: "back back-new" %>
+    </div>
+
+</div>
