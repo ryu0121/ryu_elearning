@@ -30,6 +30,7 @@ class Admin::WordsController < ApplicationController
   end
 
   def update
+    @category = Category.find(params[:category_id])
     @word = Word.find(params[:id])
     if @word.update(word_params)
       flash[:success] = "Successfully Updated !"
