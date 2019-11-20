@@ -16,7 +16,7 @@ class Word < ApplicationRecord
   end
 
   def has_unique_choices
-    unless choices.uniq{|choice|choice.content}.count == 3
+    if choices.uniq{|choice|choice.content}.count < choices.length
       return errors.add :base, 'Choices should have unique answer'
     end
   end
