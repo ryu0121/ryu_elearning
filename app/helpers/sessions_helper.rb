@@ -21,7 +21,4 @@ module SessionsHelper
     user == current_user
   end
 
-  def admin_user?(user)
-    user == current_user
-  end
 end

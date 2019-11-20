@@ -14,7 +14,9 @@ class ApplicationController < ActionController::Base
   end
 
   def admin_user
-    @user = User.find_by(admin: true)
-    redirect_to(root_url) unless admin_user?(@user)
+    unless current_user.admin?
+      flash[:danger] = "You are not authorized."
+      redirect_to(root_url)
+    end
   end
 end
