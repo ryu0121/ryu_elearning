@@ -1,24 +1,26 @@
-<div class="follow-body">
-    <p class="text-center mb-3 follow-title">USERS</p>
-
+<div class="container-fluid">
     <div class="row">
-        <% @users.each do |user| %>
-            <div class="col-4 user-group mt-3 mb-3">
-                <div class="media mb-3">
-                    <% if user.photo.attached? %>
-                <%= image_tag user.photo.variant(resize:'200x200').processed, class:"photo" %>
-                    <% else %>
-                        <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
-                    <% end %>
-                    <div class="media-body">
-                        <%= link_to user.name, user, class: "follow-user", style: "text-decoration: none;" %>
+    <div class="col-md-10 offset-md-1">
+        <p class="text-center mb-3 follow-title">USERS</p>
+        <div class="row index">
+            <% @users.each do |user| %>
+                <div class="col-4 user-group mt-3 mb-3">
+                    <div class="media mb-3">
+                        <% if user.photo.attached? %>
+                    <%= image_tag user.photo.variant(resize:'200x200').processed, class:"photo" %>
+                        <% else %>
+                            <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
+                        <% end %>
+                        <div class="media-body">
+                            <%= link_to user.name, user, class: "follow-user", style: "text-decoration: none;" %>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <% end %>
-    </div>
+            <% end %>
+        </div>
 
-    <div class="paginate text-center mb-3">
-        <%= will_paginate %>
+        <div class="paginate text-center mb-3">
+            <%= will_paginate %>
+        </div>
     </div>
 </div>

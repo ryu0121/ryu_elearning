@@ -36,6 +36,13 @@ html, body{
   }
 }
 
+.navbar {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
 .nav-link {
   font-family: 'Lobster', cursive;
   font-size: 1.3em;
@@ -66,7 +73,7 @@ html, body{
   background-image: url(soccer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 515px;
+  height: 531px;
   width: 100%;
   position: relative;
   .icons {
@@ -163,38 +170,17 @@ html, body{
   border-radius: 10px;
   margin-top: 1%;
   padding-bottom: 1%;
-  position: absolute;
-    top: 25%;
-    left: 36%
 }
 
 .form-top {
   background-color: rgba(26, 25, 25, 0.7);
   border-radius: 10px;
   padding-bottom: 1%;
-  margin-left: 25%;
 }
 
 .form-group .form-text {
   font-family: 'Frank Ruhl Libre', serif;
   color: white;
-}
-
-.form-image-session {
-  background-color: rgb(255, 247, 247);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 515px;
-  width: 100%;
-  position: relative;
-}
-
-.form-image {
-  background-color: rgb(255, 247, 247);
-  height: 920px;
-  width: 100%;
-  position: relative;
-  padding-top: 6%;
 }
 
 // to signup btn
@@ -227,6 +213,10 @@ html, body{
 }
 
 // dashboard
+.dash {
+  height: 100%;
+}
+
 .learned-number {
   font-family: 'Frank Ruhl Libre', serif;
 }
@@ -421,13 +411,6 @@ html, body{
 
 // follow-users
 
-.follow-body {
-  background-color: rgb(255, 247, 247);
-  background-size: cover;
-  height: 790px;
-  width: 100%;
-}
-
 .follow-user {
   font-family: 'Frank Ruhl Libre', serif;
   font-size: 1.5em;
@@ -449,7 +432,6 @@ html, body{
   font-weight: 150;
   font-size: 2.8em;
   letter-spacing: .1em;
-  padding-top: 40px;
 }
 
 .btn-adminpage {
@@ -513,6 +495,7 @@ table {
   margin: 0 auto;
   border-radius: 5px;
   font-family: 'Frank Ruhl Libre', serif;
+  table-layout: fixed;
   th {
     text-align: center;
     letter-spacing: .1em;
@@ -531,7 +514,12 @@ table {
     padding-right: 8px;
     font-size: 1.2em;
     font-family: 'Frank Ruhl Libre', serif;
+    overflow-wrap : break-word;
   }
+}
+
+.description {
+  width: 400px;
 }
 
 .admin-give-btn {
@@ -564,14 +552,8 @@ table {
     color: white;
   }
 }
-.foot-of-index {
-  position: relative;
-}
 .back-index {
   text-decoration: none !important;
-  position: absolute;
-    top: 8%;
-    left: 20%;
 }
 
 // .administrate-categories
@@ -579,8 +561,8 @@ table {
 .btn-new-category {
   border-color: black;
   font-family: 'Frank Ruhl Libre', serif;
-  width: 35%;
-  height: 10%;
+  width: 50%;
+  height: 8%;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: .1em;
@@ -595,7 +577,7 @@ table {
 }
 
 .category-btn-group {
-  margin-left: 39%;
+  margin-left: 33%;
 }
 
 .back-index-test {
@@ -632,24 +614,7 @@ table {
   }
 }
 
-.administrate-categories {
-  background-color: rgb(255, 247, 247);
-  width: 100%;
-  height: 800px;
-  position: relative;
-}
-
 // category-new
-
-.create-top {
-  background-color: rgb(255, 247, 247);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 625px;
-  padding-top: 5%;
-  width: 100%;
-  position: relative;
-}
 
 .back-new {
   text-decoration: none !important;
@@ -680,14 +645,6 @@ table {
   }
 }
 
-.table,td,th {
-  width:5%;
-}
-
-.description {
-  width: 50%;
-}
-
 // word create
 .word-create-box {
   background-color: rgba(26, 25, 25, 0.7);
@@ -702,11 +659,46 @@ table {
   display: inline;
 }
 
-.word-create-back {
+// lessons
+.card {
+  height: 10%;
+  margin-left: 5.5%;
+}
+
+.subtitle {
+  height: 70px;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.btn-learned {
+  width: 140px;
+  height: 45px;
+  padding-top: 7%;
+}
+
+.container-fluid {
   background-color: rgb(255, 247, 247);
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 820px;
+  background-repeat: no-repeat;
+  width:100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  padding: 0px;
+  margin: 0px;
   width: 100%;
-  padding-top: 5%;
+}
+
+.btn-group {
+  width: 50%;
+}
+
+.btn-secondary {
+  width:10%;
 }

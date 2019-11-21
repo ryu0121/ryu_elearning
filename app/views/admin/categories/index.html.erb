@@ -1,33 +1,35 @@
-<div class="administrate-categories">
-    <p class="text-center admin-title">ADMINISTRATER CATEGORIES</p>
-    <div class="pb-4 category-btn-group">
-        <%= link_to 'New Category', new_admin_category_path, class: "btn btn-new-category" %>
-    </div>
-    <div class ="row text-center col-6 offset-md-3">
-        <table border="1">
-            <tr>
-                <th>TITLE</th>
-                <th>DESCRIPTION</th>
-                <th>SETTINGS</th>
-            </tr>
-            <% @categories.each do |category| %>
-            <tr>
-                <td><%= link_to category.title, admin_category_words_path(category), class: "category-title" %></td>
-                <td class="description"><%= category.description %></td>
-                <td>
-                    <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
-                    <%= link_to('DELETE', admin_category_path(category), method: :delete, data: { 
-                        confirm: 'Are you sure?', cancel: 'Cancel', commit: 'Sure'
-                    } , title: 'Confirmation', class: "delete-btn") %>
-                </td>
-            </tr>
-            <% end %>
-        </table>
-    </div>
-    <div class="foot-of-index">
-        <%= link_to 'Back', admin_home_path, class: "back back-index" %>
-        <div class="paginate text-center mt-4">
-            <%= will_paginate %>
+<div class="container-fluid">    
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <p class="text-center admin-title">ADMINIATRATER CATEGORIES</p>
+            <div class="pb-4 category-btn-group">
+                <%= link_to 'New Category', new_admin_category_path, class: "btn btn-new-category" %>
+            </div>
+            <div class ="row index">
+                <table border="1" width="100%">
+                    <tr>
+                        <th width="20%">TITLE</th>
+                        <th width="60%">DESCRIPTION</th>
+                        <th width="20%">SETTINGS</th>
+                    </tr>
+                    <% @categories.each do |category| %>
+                    <tr>
+                        <td width="20%"><%= link_to category.title, admin_category_words_path(category), class: "description category-title" %></td>
+                        <td width="60%"><%= category.description %></td>
+                        <td width="20%">
+                            <%= link_to('EDIT', edit_admin_category_path(category), class: "edit-btn") %>/
+                            <%= link_to('DELETE', admin_category_path(category), method: :delete, data: { 
+                                confirm: 'Are you sure?', cancel: 'Cancel', commit: 'Sure'
+                            } , title: 'Confirmation', class: "delete-btn") %>
+                        </td>
+                    </tr>
+                    <% end %>
+                </table>
+            </div>
+            <%= link_to 'Back', admin_home_path, class: "back back-index" %>
+            <div class="paginate text-center mt-4">
+                <%= will_paginate %>
+            </div>
         </div>
     </div>
 </div>
