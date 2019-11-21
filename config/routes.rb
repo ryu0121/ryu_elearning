@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'categories/index'
   root 'staticpages#home'
   get '/about', to: 'staticpages#about'
   get '/login', to: 'sessions#new'
