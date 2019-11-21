@@ -1,33 +1,33 @@
-<div class="administrate-users">
-    <p class="text-center pb-4 admin-title">ADMINISTRATER USERS</p>
-    <div class ="row text-center col-6 offset-md-3">
-        <table border="1">
-            <tr>
-                <th>NAME</th>
-                <th>EMAIL</th>
-                <th>ADMIN</th>
-            </tr>
-            <% @users.each do |user| %>
-            <tr>
-                <td><%= user.name %></td>
-                <td><%= user.email %></td>
-                <td>
-                    <% if user.admin? %>
-                        <%= link_to('DELETE', admin_user_path(user), method: :delete, class: "btn admin-delete-btn") %>
-                    <% else %>
-                        <%= link_to('ADD', admin_user_path(user), method: :patch, class: "btn admin-give-btn") %>
+<div class="container-fluid pt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <p class="text-center admin-title">ADMINISTRATER USERS</p>
+            <div class ="row text-center">
+                <table border="1" width="90%">
+                    <tr>
+                        <th width="15%">NAME</th>
+                        <th width="40%">EMAIL</th>
+                        <th width="15%">ADMIN</th>
+                    </tr>
+                    <% @users.each do |user| %>
+                    <tr>
+                        <td><%= user.name %></td>
+                        <td><%= user.email %></td>
+                        <td>
+                            <% if user.admin? %>
+                                <%= link_to('DELETE', admin_user_path(user), method: :delete, class: "btn admin-delete-btn") %>
+                            <% else %>
+                                <%= link_to('ADD', admin_user_path(user), method: :patch, class: "btn admin-give-btn") %>
+                            <% end %>
+                        </td>
+                    </tr>
                     <% end %>
-                </td>
-            </tr>
-            <% end %>
-        </table>
-    </div>
-    <div class="foot-of-index">
-        <%= link_to 'Back', admin_home_path, class: "back back-index" %>
-        <div class="paginate text-center mt-4">
-            <%= will_paginate %>
+                </table>
+            </div>
+            <%= link_to 'Back', admin_home_path, class: "back back-index" %>
+            <div class="paginate text-center mt-4">
+                <%= will_paginate %>
+            </div>
         </div>
     </div>
-
-    
 </div>

@@ -1,16 +1,18 @@
-<div class="form-image-session">    
-    <div class="col-3 form-top-session pt-2 pb-4">
-        <h1 class="text-center title-admin">Login</h1>
-        <%= form_with scope: :session, url: login_path do |f| %>
-            <div class="form-group">
-                <%= f.label :email, class: "form-text" %>
-                <%= f.email_field :email, class: "form-control" %>
-            </div>
-            <div class="form-group">
-                <%= f.label :password, class: "form-text" %>
-                <%= f.password_field :password, class: "form-control" %>
-            </div>
-            <%= f.submit "Login", class: 'btn create-btn btn-block' %>
-        <% end %>
+<div class="container-fluid dash pt-4">
+    <div class="row">
+        <div class="col-md-4 form-top-session offset-md-4 pt-2 pb-4">
+            <h1 class="text-center title-admin">Login</h1>
+            <%= form_with scope: :session, url: login_path do |f| %>
+                <div class="form-group">
+                    <%= f.label :email, class: "form-text" %>
+                    <%= f.email_field :email, class: "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :password, class: "form-text" %>
+                    <%= f.password_field :password, class: "form-control" %>
+                </div>
+                <%= f.submit "Login", class: 'btn create-btn btn-block' %>
+            <% end %>
+        </div>
     </div>
 </div>

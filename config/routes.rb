@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get :following, :followers
     end
   end
+  resources :categories, only: [:index]
   resources :relationships, only: [:create, :destroy]
   namespace :admin do
     get '/home', to: 'users#home'
