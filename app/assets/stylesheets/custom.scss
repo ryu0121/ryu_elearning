@@ -659,7 +659,7 @@ table {
   display: inline;
 }
 
-// lessons
+// lessons-index
 .card {
   height: 10%;
   margin-left: 5.5%;
@@ -701,4 +701,51 @@ table {
 
 .btn-secondary {
   width:10%;
+}
+
+.result-btn {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  color: rgba(0, 128, 0, 1);
+  background-color: white;
+  border:1px solid rgba(0, 128, 0, 1);
+  text-decoration: none !important;
+  &:hover {
+    color: white;
+    background-color:rgba(0, 128, 0, 0.8);
+    border:1px solid rgba(0, 128, 0, 0.8);
+  }
+}
+
+.start-btn {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.8);
+  text-decoration: none !important;
+  &:hover {
+    color:white;
+    background-color: rgba(0, 128, 0, 0.6);
+  }
+}
+
+.continue-btn {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  color: white;
+  background-color: rgba(248, 143, 73, 1);
+  text-decoration: none !important;
+  &:hover {
+    color:white;
+    background-color: rgba(252, 161, 101, 0.9);
+  }
 }
