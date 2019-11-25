@@ -21,12 +21,12 @@
                             </div>
                             <% lesson = current_user.lesson_taken(category.id) %>
                             <% if lesson.nil? %>
-                                <%= link_to 'Start lesson', lessons_path(category_id: category.id) , method: :post, class: 'mt-2 btn lesson-btn text-left' %>
+                                <%= link_to 'Start lesson', lessons_path(category_id: category.id) , method: :post, class: 'mt-2 btn start-btn text-left' %>
                             <% else %>
                                 <% if lesson.totalScore.nil? %>
-                                    <%= link_to "Continue Lesson", new_lesson_answer_path(lesson), class: 'btn lesson-btn' %>
+                                    <%= link_to "Continue Lesson", new_lesson_answer_path(lesson), class: 'btn continue-btn' %>
                                 <% else %>
-                                    <%= link_to 'Check result', "#" , method: :post, class: 'mt-2 btn lesson-btn text-left' %>
+                                    <%= link_to 'Check result', "#" , method: :post, class: 'mt-2 btn result-btn text-left' %>
                                 <% end %>
                             <% end %>
                         </div>
