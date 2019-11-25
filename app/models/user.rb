@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_one_attached :photo
+  has_many :lessons, dependent: :destroy
   before_save { email.downcase! }
 
   validates :name, presence: true, length: { maximum: 50 }
@@ -31,6 +32,10 @@ class User < ApplicationRecord
 
   def following?(other_user)
     following.include?(other_user)
+  end
+
+  def lesson_taken(cat_id)
+    lesson = lessons.find_by(category_id: cat_id)
   end
 
 end

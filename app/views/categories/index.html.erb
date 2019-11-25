@@ -3,19 +3,32 @@
         <div class="col-md-8 offset-md-2">
             <p class="text-center admin-title">Lessons</p>
             <div class="btn-group justify-content-center mt-4 mb-4 offset-md-3" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Left</button>
-                <button type="button" class="btn btn-secondary">Middle</button>
-                <button type="button" class="btn btn-secondary">Right</button>
+                <button type="button" class="btn btn-secondary">All</button>
+                <button type="button" class="btn btn-secondary">Learned</button>
+                <button type="button" class="btn btn-secondary">Not Learned</button>
             </div>
             <div class="row index">
                 <% @categories.each do |category| %>
+                    <% number_of_words = category.words.count %>
                     <div class="card col-md-5 mb-4 px-2">
                         <div class="card-body">
-                            <h5 class="card-title"><%= category.title %></h5>
+                            <div class="row">
+                                <h4 class="card-title col-md-8"><%= category.title %></h4>
+                                <h5 class="p-0 mt-1 col-md-4"><%= number_of_words %> words</h5>
+                            </div>
                             <div class="mb-2 subtitle">
                                 <h6 class="card-subtitle text-muted"><%= category.description %></h6>
                             </div>
-                            <%= link_to 'Check result', "#", class: 'mt-2 btn btn-primary text-left' %>
+                            <% lesson = current_user.lesson_taken(category.id) %>
+                            <% if lesson.nil? %>
+                                <%= link_to 'Start lesson', lessons_path(category_id: category.id) , method: :post, class: 'mt-2 btn lesson-btn text-left' %>
+                            <% else %>
+                                <% if lesson.totalScore.nil? %>
+                                    <%= link_to "Continue Lesson", new_lesson_answer_path(lesson), class: 'btn lesson-btn' %>
+                                <% else %>
+                                    <%= link_to 'Check result', "#" , method: :post, class: 'mt-2 btn lesson-btn text-left' %>
+                                <% end %>
+                            <% end %>
                         </div>
                     </div>
                 <% end %>
