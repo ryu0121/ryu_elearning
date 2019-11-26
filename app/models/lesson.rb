@@ -7,6 +7,7 @@ class Lesson < ApplicationRecord
 
   def next_word
     (category.words - words).first
+    # （カテゴリー内の全部のワード-answer経由でみた答えたワード）の頭からみていってる
   end
 
   def lesson_results

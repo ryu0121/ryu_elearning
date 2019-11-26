@@ -1,0 +1,37 @@
+<div class="container-fluid pt-4 pb-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <p class="text-center admin-title">Result Page</p>
+            <div class="row index">
+                <% number_of_words = @lesson.answers.count %>
+                <% number_of_correct_words = @lesson.totalScore %>
+                <p class="text-center col-md-12 text-total">Total correct answers are <%= number_of_correct_words %>/<%= number_of_words %></p>
+                <table border="1"  width="100%">
+                    <tr>
+                        <th>RESULT</th>
+                        <th>WORD</th>
+                        <th>ANSWER</th>
+                    </tr>
+                     <% @answers.each do |answer| %>
+                    <tr>
+                        <td>
+                            <% if answer.choice.isCorrect == false %>
+                                <i class="far fa-times-circle"></i>
+                            <% else %>
+                                <i class="far fa-check-circle"></i>
+                            <% end %>
+                        </td>
+                        <td><%= answer.word.content %></td>
+                        <td><%= answer.word.correct_answer %></td>
+                    </tr>
+                    <% end %>
+                </table>
+            </div>
+            <%= link_to 'Back', categories_path, class: "back back-index" %>
+            <div class="paginate text-center mt-4">
+                <%= will_paginate @answers %>
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+</div>
