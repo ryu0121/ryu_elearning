@@ -2,9 +2,9 @@ class Word < ApplicationRecord
   belongs_to :category
   has_many :choices, dependent: :destroy
   accepts_nested_attributes_for :choices
-  belongs_to :answer
   validates :content, presence: true, length: {maximum: 50}
-  validate :has_one_correct_answer, :has_unique_choices
+  validate :has_one_correct_answer
+  validate :has_unique_choices
 
   def correct_answer
     choices.find_by(isCorrect: true).try(:content)
