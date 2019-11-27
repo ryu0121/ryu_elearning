@@ -26,7 +26,7 @@
                                 <% if lesson.totalScore.nil? %>
                                     <%= link_to "Continue Lesson", new_lesson_answer_path(lesson), class: 'btn continue-btn' %>
                                 <% else %>
-                                    <%= link_to 'Check result', "#" , method: :post, class: 'mt-2 btn result-btn text-left' %>
+                                    <%= link_to 'Check result', lesson_path(lesson), class: 'mt-2 btn result-btn text-left' %>
                                 <% end %>
                             <% end %>
                         </div>
