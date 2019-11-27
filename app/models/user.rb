@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_one_attached :photo
   has_many :lessons, dependent: :destroy
+  has_many :activities, dependent: :destroy
   before_save { email.downcase! }
 
   validates :name, presence: true, length: { maximum: 50 }

@@ -1,0 +1,50 @@
+<% if @activities.any? %>
+    <% @activities.each do |activity| %>
+        <% if activity.action_type == "Lesson" %>
+            <div class="media">
+                <div class="media-body">
+                    <!--<% if activity.user == current_user %>
+                       <% if activity.user.photo.attached? %>
+                            <%= image_tag activity.user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% else %>
+                            <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
+                        <% end %>
+                    <% else %>
+                        <% if activity.user.photo.attached? %>
+                            <%= image_tag activity.user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% else %>
+                            <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
+                        <% end %>
+                    <% end %> -->
+
+                     <% if current_user.photo.attached? %>
+                            <%= image_tag current_user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% else %>
+                            <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
+                        <% end %>
+                    <%= link_to_if activity.user == current_user, "You", user_path(current_user) do
+                        link_to activity.user.name, user_path(activity.user.id) end %>  learned
+                        <%= activity.action.lesson_results %> of
+                        <%= activity.action.words.size %> in
+                        <%= link_to activity.action.category.title, "#" %>
+                        <div>
+                            <small class="text-meted"><%= time_ago_in_words(activity.created_at) %></small>
+                        </div>
+                </div>
+            </div>
+        <% else %>
+            <div class="media">
+                <div class="media-body">
+                    <%= link_to_if activity.user == current_user, "You", user_path(current_user) do
+                        link_to activity.user.name, user_path(activity.user.id) end %> followed
+                    <%= link_to activity.action.followed.name, activity.action.followed %>
+                    <div>
+                        <small class="text-muted"><%= time_ago_in_words(activity.created_at) %></small>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
+<% else %>
+    <h3 class="text-muted text-center">Nothing to show</h3>
+<% end %>
