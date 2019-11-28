@@ -73,7 +73,7 @@ html, body{
   background-image: url(soccer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 531px;
+  height: 100vh;
   width: 100%;
   position: relative;
   .icons {
@@ -771,4 +771,23 @@ table {
 
 .height-100 {
   height: 100%;
+}
+
+
+// .activity-feed
+.photo-feed {
+  width: 80px;
+  height: 80px;
+  border-radius: 52%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.people-name {
+  text-decoration: none;
+  color: rgb(39, 109, 240);
+}
+.people-name:hover {
+  color: rgb(39, 109, 240);
+
 }

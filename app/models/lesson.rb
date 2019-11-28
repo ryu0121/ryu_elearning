@@ -4,6 +4,7 @@ class Lesson < ApplicationRecord
   has_many :choices, through: :answers
   belongs_to :category
   belongs_to :user
+  has_one :activity, as: :action, dependent: :destroy
 
   def next_word
     (category.words - words).first

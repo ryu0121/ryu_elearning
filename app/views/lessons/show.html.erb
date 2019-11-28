@@ -1,19 +1,23 @@
 <div class="container-fluid pt-4 pb-4">
     <div class="row height-100">
         <div class="col-md-8 offset-md-2">
-            <p class="text-center admin-title">Result Page</p>
+            <p class="text-center admin-title"><%= @lesson.category.title %></p>
             <div class="row index">
                 <% number_of_words = @lesson.answers.count %>
                 <% number_of_correct_words = @lesson.totalScore %>
                 <p class="text-center col-md-12 text-total">Total correct answers are <%= number_of_correct_words %>/<%= number_of_words %></p>
                 <table border="1"  width="100%">
                     <tr>
-                        <th>RESULT</th>
                         <th>WORD</th>
-                        <th>ANSWER</th>
+                        <th>YOUR ANSWER</th>
+                        <th>CORRECT ANSWER</th>
+                        <th>RESULT</th>
                     </tr>
                      <% @answers.each do |answer| %>
                     <tr>
+                        <td><%= answer.word.content %></td>
+                        <td><%= answer.choice.content %></td>
+                        <td><%= answer.word.correct_answer %></td>
                         <td>
                             <% if answer.choice.isCorrect == false %>
                                 <i class="far fa-times-circle"></i>
@@ -21,8 +25,6 @@
                                 <i class="far fa-check-circle"></i>
                             <% end %>
                         </td>
-                        <td><%= answer.word.content %></td>
-                        <td><%= answer.word.correct_answer %></td>
                     </tr>
                     <% end %>
                 </table>
