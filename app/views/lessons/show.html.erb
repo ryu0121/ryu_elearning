@@ -1,7 +1,7 @@
 <div class="container-fluid pt-4 pb-4">
     <div class="row height-100">
         <div class="col-md-8 offset-md-2">
-            <p class="text-center admin-title">Result Page</p>
+            <p class="text-center admin-title"><%= @lesson.category.title %></p>
             <div class="row index">
                 <% number_of_words = @lesson.answers.count %>
                 <% number_of_correct_words = @lesson.totalScore %>

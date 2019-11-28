@@ -1,7 +1,7 @@
 <% if @activities.any? %>
     <% @activities.each do |activity| %>
         <% if activity.action_type == "Lesson" %>
-            <div class="media col-md-6 offset-md-3">
+            <div class="media col-md-6">
                 <div class="media-left media-middle">
                     <% if activity.user == current_user %>
                         <% if current_user.photo.attached? %>
@@ -22,7 +22,7 @@
                         link_to activity.user.name, user_path(activity.user.id), class: "people-name" end %>  learned
                         <%= activity.action.lesson_results %> of
                         <%= activity.action.words.size %> in
-                        <%= link_to activity.action.category.title, "#",class: "people-name" %>
+                        <%= link_to activity.action.category.title, lesson_path(activity.action.id),class: "people-name" %>
                     <div>
                         <small class="text-meted"><%= time_ago_in_words(activity.created_at) %></small>
                     </div>
