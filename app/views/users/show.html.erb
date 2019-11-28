@@ -18,6 +18,9 @@
                 <%= render 'edit_button' if current_user?(@user) %>
                 <%= render 'admin_button' if current_user.admin? && @user.admin? %>
             </div>
+            <div>
+                <p class="text-center">learned <%= current_user.answers.count %> words</p>
+            </div>
         </div>
 
         <div class="col-8 mt-4", style="padding-right: 0px">

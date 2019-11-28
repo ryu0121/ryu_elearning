@@ -798,5 +798,56 @@ table {
   margin-left: 4%;
   border: 2px solid gray;
   border-radius: 30px;
-  height: 250px;
+  height: 400px;
+}
+
+.btn-learned {
+  border-color: black;
+  padding-top: 6px;
+  font-family: 'Frank Ruhl Libre', serif;
+  width: 55%;
+  height: 15%;
+  font-size: 1.3em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  &:hover{
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+  }
+}
+
+.btn-kind-alllearn {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  color: white;
+  width: 100px;
+  background-color: rgba(0, 128, 0, 0.8);
+  text-decoration: none !important;
+  &:hover {
+    color:white;
+    background-color: rgba(0, 128, 0, 0.6);
+  }
+}
+
+.btn-kind-learn {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  transition: 0.3s;
+  color: white;
+  width: 100px;
+  background-color: rgba(184, 190, 184, 0.8);
+  text-decoration: none !important;
+  &:hover {
+    color:white;
+    background-color: rgba(184, 190, 184, 0.8);
+  }
 }

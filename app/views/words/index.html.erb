@@ -12,6 +12,7 @@
             <div class="lerned-history mt-2">
                 <p class="learned-number-name"><%= current_user.name %></p>
             </div>
+            <%= render 'users/edit_button' %>
         </div>
         <div class="col-md-8">
             <div class="row index">
@@ -43,5 +44,5 @@
             </div>
         </div>
     </div>
-    <%= link_to 'Back', user_path(current_user), class: "back back-index" %>
+    <%= link_to 'Back', root_path(current_user), class: "back back-index" %>
 </div>

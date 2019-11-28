@@ -10,7 +10,7 @@
                 <% end %>
                 <div class="lerned-history mt-2">
                     <p class="learned-number-name mb-4"><%= current_user.name %></p>
-                    <%= link_to "learned #{current_user.answers.count} words", words_path, class: "learned-number" %>
+                    <%= link_to "learned #{current_user.answers.count} words", words_path, class: "btn btn-learned" %>
                 </div>
             </div>
         </div>
