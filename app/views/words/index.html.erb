@@ -1,0 +1,47 @@
+<div class="container-fluid pt-4 pb-4">
+    <div class="row">
+        <div class="title col-md-12">
+            <p class="learned-number-title text-center">WORDS LEARNED</p>
+        </div>
+        <div class="col-md-3 word-index-user text-center">
+            <%if current_user.photo.attached? %>
+                <%= image_tag current_user.photo.variant(resize:'300x300').processed, class:"photo-show" %>
+            <% else %>
+                <%= image_tag 'cat.jpg', class: "photo-show", alt: '元の画像' %>
+            <% end %>
+            <div class="lerned-history mt-2">
+                <p class="learned-number-name"><%= current_user.name %></p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row index">
+                <table border="1"  width="100%">
+                    <tr>
+                        <th>WORD</th>
+                        <th>YOUR ANSWER</th>
+                        <th>CORRECT ANSWER</th>
+                        <th>RESULT</th>
+                    </tr>
+                     <% @answers.each do |answer| %>
+                    <tr>
+                        <td><%= answer.word.content %></td>
+                        <td><%= answer.choice.content %></td>
+                        <td><%= answer.word.correct_answer %></td>
+                        <td>
+                            <% if answer.choice.isCorrect == false %>
+                                <i class="far fa-times-circle"></i>
+                            <% else %>
+                                <i class="far fa-check-circle"></i>
+                            <% end %>
+                        </td>
+                    </tr>
+                    <% end %>
+                </table>
+            </div>
+            <div class="paginate text-center mt-4">
+                <%= will_paginate @answers %>
+            </div>
+        </div>
+    </div>
+    <%= link_to 'Back', user_path(current_user), class: "back back-index" %>
+</div>
