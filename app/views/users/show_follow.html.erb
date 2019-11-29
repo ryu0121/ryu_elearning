@@ -7,7 +7,7 @@
                 <div class="col-4 user-group mt-3 mb-3">
                     <div class="media mb-3">
                         <% if user.image? %>
-                    <%= image_tag user.image.to_s, class:"photo" %>
+                            <%= image_tag user.image.to_s, class:"photo" %>
                         <% else %>
                             <%= image_tag 'cat.jpg', class: "photo", alt: '元の画像' %>
                         <% end %>
