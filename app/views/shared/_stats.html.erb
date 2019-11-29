@@ -1,5 +1,5 @@
 <% @user ||= current_user %>
-<div class="stats">
+<div class="stats col-md-12">
     <a href="<%= following_user_path(@user) %>", class="learned-number stats-former">
         <strong id="following" class="stat">
             <%= @user.following.count %>
@@ -13,3 +13,4 @@
         followers
     </a>
 </div>
+

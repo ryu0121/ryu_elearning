@@ -24,7 +24,7 @@
                         <%= activity.action.words.size %> in
                         <%= link_to activity.action.category.title, lesson_path(activity.action.id),class: "people-name" %>
                     <div>
-                        <small class="text-meted"><%= time_ago_in_words(activity.created_at) %></small>
+                        <small class="text-meted"><%= time_ago_in_words(activity.created_at) %> ago</small>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         link_to activity.user.name, user_path(activity.user.id), class: "people-name" end %> followed
                     <%= link_to activity.action.followed.name, activity.action.followed, class: "people-name" %>
                      <div>
-                        <small class="text-meted"><%= time_ago_in_words(activity.created_at) %></small>
+                        <small class="text-meted"><%= time_ago_in_words(activity.created_at) %> ago</small>
                     </div>
                 </div>
             </div>

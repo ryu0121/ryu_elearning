@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-4 form-top-session offset-md-4 pt-2 pb-3">
             <h1 class="text-center title-admin">Login</h1>
-            <%= form_with scope: :session, url: login_path do |f| %>
+            <%= form_with scope: :session, url: login_path, local: true do |f| %>
                 <div class="form-group">
                     <%= f.label :email, class: "form-text" %>
                     <%= f.email_field :email, class: "form-control" %>
