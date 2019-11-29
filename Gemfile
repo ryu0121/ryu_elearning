@@ -77,3 +77,5 @@ gem 'rmagick'
 # For seeding data
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'data-confirm-modal'
+
+gem 'carrierwave'

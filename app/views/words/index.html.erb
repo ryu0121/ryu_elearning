@@ -4,8 +4,8 @@
             <p class="learned-number-title text-center">WORDS LEARNED</p>
         </div>
         <div class="col-md-3 word-index-user text-center">
-            <%if current_user.photo.attached? %>
-                <%= image_tag current_user.photo.variant(resize:'300x300').processed, class:"photo-show" %>
+            <%if current_user.image? %>
+                <%= image_tag current_user.image.to_s, class:"photo-show" %>
             <% else %>
                 <%= image_tag 'cat.jpg', class: "photo-show", alt: '元の画像' %>
             <% end %>

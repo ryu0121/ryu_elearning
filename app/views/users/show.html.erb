@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-md-4 mt-4">
             <div class="dashboard show-dash border-right">
-                <%if @user.photo.attached? %>
-                    <%= image_tag current_user.photo.variant(resize:'300x300').processed, class:"photo-show" %>
+                <%if @user.image? %>
+                    <%= image_tag @user.image.to_s, class:"photo-show" %>
                 <% else %>
                     <%= image_tag 'cat.jpg', class: "photo-show", alt: '元の画像' %>
                 <% end %>

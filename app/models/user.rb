@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_one_attached :photo
+  mount_uploader :image, ImagesUploader
   has_many :lessons, dependent: :destroy
   has_many :activities, dependent: :destroy
   has_many :categories, through: :lessons

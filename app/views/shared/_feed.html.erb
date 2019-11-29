@@ -4,14 +4,14 @@
             <div class="media col-md-6">
                 <div class="media-left media-middle">
                     <% if activity.user == current_user %>
-                        <% if current_user.photo.attached? %>
-                            <%= image_tag current_user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% if current_user.image? %>
+                            <%= image_tag user.image.to_s, class:"photo-feed" %>
                         <% else %>
                             <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
                         <% end %>
                     <% else %>
-                        <% if activity.user.photo.attached? %>
-                            <%= image_tag activity.user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% if activity.user.image? %>
+                            <%= image_tag user.image.to_s, class:"photo-feed" %>
                         <% else %>
                             <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
                         <% end %>
@@ -32,14 +32,14 @@
             <div class="media col-md-6">
                 <div class="media-left media-middle">
                     <% if activity.user == current_user %>
-                        <% if current_user.photo.attached? %>
-                            <%= image_tag current_user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% if current_user.image? %>
+                            <%= image_tag current_user.image.to_s, class:"photo-feed" %>
                         <% else %>
                             <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
                         <% end %>
                     <% else %>
-                        <% if activity.user.photo.attached? %>
-                            <%= image_tag activity.user.photo.variant(resize:'100x100').processed, class:"photo-feed" %>
+                        <% if activity.user.image? %>
+                            <%= image_tag @user.image.to_s, class:"photo-feed" %>
                         <% else %>
                             <%= image_tag 'cat.jpg', class: "photo-feed", alt: '元の画像' %>
                         <% end %>

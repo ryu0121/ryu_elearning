@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy, :following, :followers]
   def new
     @user = User.new
+    @user.image = params[:file]
   end
 
   def index
@@ -59,7 +60,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_digest, :photo)
+      params.require(:user).permit(:name, :email, :password, :password_digest, :image)
     end
 
     def set_user
