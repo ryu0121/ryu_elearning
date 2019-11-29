@@ -3,9 +3,9 @@
         <div class="col-md-8 offset-md-2">
             <p class="text-center admin-title">Lessons</p>
             <div class="btn-group justify-content-center mt-4 mb-4 offset-md-3" role="group" aria-label="Basic example">
-                <%= link_to "All", categories_path, class: "btn btn-kind-alllearn" %>
-                <%= link_to "Learned", categories_path(status: "1"), class: "btn btn-kind-learn" %>
-                <%= link_to "Not Learned", categories_path(status: "0"), class: "btn btn-kind-learn" %>
+                <%= link_to "All", categories_path, class: "btn #{@status.nil? ? "btn-kind-alllearn" : "btn btn-kind-learn"}" %>
+                <%= link_to "Learned", categories_path(status: "1"), class: "btn #{@status == "1" ? "btn-kind-alllearn" : "btn btn-kind-learn"}" %>
+                <%= link_to "Not Learned", categories_path(status: "0"), class: "btn #{@status == "0" ? "btn-kind-alllearn" : "btn btn-kind-learn"}" %>
             </div>
             <div class="row index">
                 <% @categories.each do |category| %>
